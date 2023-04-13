@@ -23,7 +23,9 @@ Además, hubo que corregir algunos errores que se presentaron al correr el noteb
 # 2. Implementar cambios a los modelos para mejorar performance
 - Incluir ciudad de destino de vuelos no solo despegue
 - Usar float en vez de bool para dummies
-- Train/test split 80/20, estratificado
+- Usar train/val/test set estratificado
+- Hacer downsample de la clase minoritaria
+- Probar RandomForest o Neural Network
 # 3.1 Serializar modelo seleccionado
 - Se incluyó en el noteebook una función para guardar el modelo entrenado
 - Se se debe guardar el modelo y los nombres de las columnas utilizados en el objeto pikle
@@ -35,4 +37,10 @@ Además, hubo que corregir algunos errores que se presentaron al correr el noteb
 
 
 # 4. Automatizar el proceso de build y deploy de la API utilizando uno o varios servicios cloud. Argumentar.
+
+- Github actions para deploy container cada vez que se hace push a master
+- Credenciales AWS están almacenadas en github secrets por seguridad
+- Mover modelo y data a S3 automáticamente
+- En carpeta models/ debe exitir un archivo con nombre model_to_deploy.pkl para saber que es el mejor
+
 # 5. Pruebas de stress

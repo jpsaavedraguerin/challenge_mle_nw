@@ -6,8 +6,8 @@ from sklearn.linear_model import LogisticRegression
 
 # Environment variables
 
-#ARTIFACTS_PATH = os.environ("ARTIFACTS_PATH")
-ARTIFACTS_PATH = "/media/sguerin/JPSG/02_Personal/01_Projects/09_Challenge_NW/API_NW/models/logreg.pkl"
+ARTIFACT_PATH = os.environ["ARTIFACT_PATH"]
+
 
 # Helper functions
 def load_artifacts(path):
@@ -34,7 +34,7 @@ def predict(model, input_data):
 def make_prediction(input_values):
     """Main function for making predictions"""
 
-    model, features_names = load_artifacts(ARTIFACTS_PATH)
+    model, features_names = load_artifacts(ARTIFACT_PATH)
 
     input_data = encode_data(features_names=features_names,
                              input_values=input_values)
