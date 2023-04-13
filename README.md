@@ -40,7 +40,8 @@ Además, hubo que corregir algunos errores que se presentaron al correr el noteb
 
 - Github actions para deploy container cada vez que se hace push a master
 - Credenciales AWS están almacenadas en github secrets por seguridad
-- Mover modelo y data a S3 automáticamente
+- TODO: Mover modelo y data a S3 automáticamente
 - En carpeta models/ debe exitir un archivo con nombre model_to_deploy.pkl para saber que es el mejor
+
 
 # 5. Pruebas de stress
