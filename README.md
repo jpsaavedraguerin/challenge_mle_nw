@@ -47,6 +47,6 @@ podría quedar configurado para que revise si cambió un archivo en específico,
 - Task definition
 - Public / Private VPC
 - Public repository
-
+- Added webhook
 
 # 5. Pruebas de stress
