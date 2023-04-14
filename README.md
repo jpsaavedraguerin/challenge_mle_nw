@@ -38,10 +38,15 @@ Además, hubo que corregir algunos errores que se presentaron al correr el noteb
 
 # 4. Automatizar el proceso de build y deploy de la API utilizando uno o varios servicios cloud. Argumentar.
 
-- Github actions para deploy container cada vez que se hace push a master
+- Github actions para deploy container cada vez que se hace push a master, en el caso de desarrollo del modelo
+podría quedar configurado para que revise si cambió un archivo en específico, como model_to_delpoy.pkl, por ejemplo
 - Credenciales AWS están almacenadas en github secrets por seguridad
 - TODO: Mover modelo y data a S3 automáticamente
 - En carpeta models/ debe exitir un archivo con nombre model_to_deploy.pkl para saber que es el mejor
+- ECS: Ec2 t3.medium
+- Task definition
+- Public / Private VPC
+- Public repository
 
 
 # 5. Pruebas de stress
