@@ -1,6 +1,6 @@
 # CHALLENGE MACHINE LEARNING ENGINEER
 
-*[UPDATE 15/04/2023]: Se actualizó la gestión de nombres de las imágenes registradas en ECR usando el formato latest-$NOW, donde NOW es la fecha actual. Ver push_to_ecr.yml*
+*[UPDATE 15/04/2023]: Se actualizó la gestión de nombres de las imágenes registradas en ECR usando el formato latest-$NOW, donde NOW es la fecha actual, para permitir versionado. Ver push_to_ecr.yml*
 
 
 # Previo
@@ -100,7 +100,10 @@ ECR: Repositorio nnchallenge
 ECS: cluster TestCluster
 ![](./media/ECS.png)
 
-La API es accesible a través de internet mediante la url http://3.92.58.24:5000/predict, se ha relacionado el puerto 5000 del host con el puerto 5000 del container, de tal forma que puedan enviarse requests desde el exterior. Además se han configurado el grupo de seguridad y las reglas de ruteo de la instancia. 
+ECS-Services
+![](./media/ECS-Services.png)
+
+La API es accesible a través de internet mediante la url http://3.92.58.24:5000/predict (url dinámica por ahora), se ha relacionado el puerto 5000 del host con el puerto 5000 del container, de tal forma que puedan enviarse requests desde el exterior. Además se han configurado el grupo de seguridad y las reglas de ruteo de la instancia. 
 
 Request y respuesta de la instancia:
 ![](./media/Postman.png)
