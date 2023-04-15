@@ -1,5 +1,8 @@
 # CHALLENGE MACHINE LEARNING ENGINEER
 
+*[UPDATE 15/04/2023]: Se actualizó la gestión de nombres de las imágenes registradas en ECR usando el formato latest-$NOW, donde NOW es la fecha actual. Ver push_to_ecr.yml*
+
+
 # Previo
 Antes de comenzar a desarrollar la solución al problema planteado, se realiza una estandarización de la estructura del proyecto. Aquí suponemos que esta estructura es conocida por todo el equipo. Al estructurar el proyecto de esta forma se deben hacer algunas modificaciones al notebook entregado, específicamente a las rutas definidas. Por ejemplo, la ruta "dataset_SCL.csv" ahora se indica como a "data/dataset_SCL.csv". A continuación se detalla la estructura del proyecto:
 
@@ -114,6 +117,6 @@ Los resultados obtenidos anteriormente pueden ser mejorados utilizando por ejemp
 
 # 6. Próximos pasos. 
 
-La implementación actual puede ser mejorada en varios aspectos. Por ejemplo, los modelos y la data actuales ocupan poco almacenamiento. En la realidad estos podrían llegar a crecer bastante. Sería mucho mas conveniente tener estos artefactos almacenados en la nube, por ejemplo aws S3. Por otro lado, la seguridad es importante y se debería implementar subnets separadas publicas y privadas para las tareas específicas de comunicarse con el exterior y correr los containers. Además, un balanceador de carga es necesario como se mencionó antes. De esta forma se levantarían nuevos containers a medida que la demanda aumenta. Finalmente, un software de automatización tipo jenkins facilitaría el proceso completo de build, test, stage y deploy de los modelos. A continuación se presenta un diagrama de ejemplo. 
+La implementación actual puede ser mejorada en varios aspectos. Por ejemplo, los modelos y la data actuales ocupan poco almacenamiento. En la realidad estos podrían llegar a crecer bastante. Sería mucho mas conveniente tener estos artefactos almacenados en la nube, por ejemplo aws S3. Por otro lado, la seguridad es importante y se debería implementar subnets separadas publicas y privadas para las tareas específicas de comunicarse con el exterior y correr los containers. Además, un balanceador de carga es necesario como se mencionó antes. De esta forma se levantarían nuevos containers a medida que la demanda aumenta. Si bien en este desarrollo se utilizó Github actions para construir y desplegar la solución, existen otras alternativas como jenkins u otras integradas en aws como Codebuilder. A continuación se presenta un diagrama de ejemplo. 
 
 ![](./media/NextSteps.png)
