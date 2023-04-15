@@ -4,7 +4,7 @@
 Antes de comenzar a desarrollar la solución al problema planteado, se realiza una estandarización de la estructura del proyecto. Aquí suponemos que esta estructura es conocida por todo el equipo. Al estructurar el proyecto de esta forma se deben hacer algunas modificaciones al notebook entregado, específicamente a las rutas definidas. Por ejemplo, la ruta "dataset_SCL.csv" ahora se indica como a "data/dataset_SCL.csv". A continuación se detalla la estructura del proyecto:
 
     |----- .github/
-            |----- workflows                    <- Define acciones en github
+            |----- workflows                    <- Define acciones en github para crear la imagen docker, registrarla en aws ECR y luego desplarla con aws ECS
     |----- data/                                <- Contiene la data del proyecto 
             |----- all_features.csv             <- csv con data original y sintética
             |----- dataset_SCL.csv              <- dataset original
