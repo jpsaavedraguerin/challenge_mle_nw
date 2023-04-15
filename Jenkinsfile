@@ -11,15 +11,8 @@ pipeline {
     }
     
     environment {
-            POM_VERSION = getVersion()
-            JAR_NAME = getJarName()
-            AWS_ECR_REGION = 
-            AWS_ECS_TASK_DEFINITION = ''
-            AWS_ECS_NETWORK_MODE = 
-            AWS_ECS_CPU = 
-            AWS_ECS_MEMORY = 
-            AWS_ECS_CLUSTER = 
-            AWS_ECS_TASK_DEFINITION_PATH = './ecs/container-definition-update-image.json'
+
+        #definir
     }
 
     stage('Deploy in ECS') {
