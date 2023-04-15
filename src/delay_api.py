@@ -8,8 +8,6 @@ from flask import Flask, jsonify, request
 from flask_restful import Api, Resource, reqparse
 
 
-# from sklearn.linear_model import LinearRegression
-
 # API INIT VARIABLES AND FUNCTIONS
 app = Flask(__name__)
 api = Api(app)

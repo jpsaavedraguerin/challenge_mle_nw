@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "45d9c17f-5f05-4fbe-a286-27ff63c5f88c",
+		"name": "TestApiNN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://3.92.58.24:5000/predict",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"OPERA\": \"Aerolineas Argentinas\",\n    \"TIPOVUELO\": \"I\",\n    \"MES\": 12\n}"
+				},
+				"url": {
+					"raw": "http://3.92.58.24:5000/predict",
+					"protocol": "http",
+					"host": [
+						"3",
+						"92",
+						"58",
+						"24"
+					],
+					"port": "5000",
+					"path": [
+						"predict"
+					]
+				},
+				"description": "Test Api ECS AWS"
+			},
+			"response": [
+				{
+					"name": "http://3.92.58.24:5000/predict",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"OPERA\": \"Aerolineas Argentinas\",\n    \"TIPOVUELO\": \"I\",\n    \"MES\": 12\n}"
+						},
+						"url": {
+							"raw": "http://3.92.58.24:5000/predict",
+							"protocol": "http",
+							"host": [
+								"3",
+								"92",
+								"58",
+								"24"
+							],
+							"port": "5000",
+							"path": [
+								"predict"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.3 Python/3.10.11"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Apr 2023 21:46:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    0\n]"
+				}
+			]
+		}
+	]
+}
